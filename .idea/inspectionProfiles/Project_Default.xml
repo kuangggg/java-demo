@@ -102,6 +102,7 @@
           <option value="org.projectlombok:lombok" />
           <option value="mysql:mysql-connector-java" />
           <option value="org.mybatis:mybatis" />
+          <option value="com.google.guava:guava" />
         </list>
       </option>
     </inspection_tool>
