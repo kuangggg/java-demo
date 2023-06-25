@@ -13,12 +13,6 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
 
-//    private static Cache<String, Object> cm = CacheBuilder.newBuilder()
-//            .initialCapacity(10)
-//            .concurrencyLevel(5)
-//            .expireAfterWrite(3, TimeUnit.SECONDS)
-//            .build();
-
     public static void main(String[] args) {
         Map<String, String> split = Splitter.on("&")
                 .withKeyValueSeparator("=")
@@ -32,10 +26,5 @@ public class Main {
 
         ImmutableList<String> of = ImmutableList.of("na", "ff");
         System.out.println(of);
-
-
-
-
-
     }
 }

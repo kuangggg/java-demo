@@ -11,6 +11,7 @@
         <module name="agent" />
         <module name="jni" />
         <module name="log" />
+        <module name="rx" />
         <module name="mybatis" />
         <module name="rmq" />
         <module name="demo" />
