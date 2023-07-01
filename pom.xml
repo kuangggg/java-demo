@@ -19,6 +19,7 @@
         <module>rmq</module>
         <module>netty</module>
         <module>rx</module>
+        <module>kfk</module>
     </modules>
 
 </project>

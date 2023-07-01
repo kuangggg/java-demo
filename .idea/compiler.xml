@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zk" />
+        <module name="kfk" />
         <module name="agent" />
         <module name="jni" />
         <module name="log" />

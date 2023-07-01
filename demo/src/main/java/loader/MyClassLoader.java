@@ -28,9 +28,8 @@ public class MyClassLoader extends ClassLoader {
     }
 
 
-    @lombok.SneakyThrows
     @Override
-    protected Class<?> findClass(String name) {
+    protected Class<?> findClass(String name) throws ClassNotFoundException {
 
         int idx = name.lastIndexOf('.');
         String fileName;
@@ -62,6 +61,8 @@ public class MyClassLoader extends ClassLoader {
             return defineClass(name, bytes, 0, bytes.length);
 
         } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
 

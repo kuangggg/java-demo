@@ -1,13 +1,11 @@
 package thread.pool;
 
-import lombok.SneakyThrows;
 
 import java.util.concurrent.*;
 
 public class ShutdownDemo {
 
-    @SneakyThrows
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         ThreadPoolExecutor pool = new ThreadPoolExecutor(1, 2, 5,
                 TimeUnit.SECONDS, new ArrayBlockingQueue<>(2), Executors.defaultThreadFactory());
