@@ -12,6 +12,13 @@ import io.netty.util.CharsetUtil;
 public class EchoServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        System.out.println("tcp connected");
+        super.channelActive(ctx);
+    }
+
+
+    @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
         ByteBuf in = (ByteBuf) msg;
         System.out.println("server received: " + in.toString(CharsetUtil.UTF_8));

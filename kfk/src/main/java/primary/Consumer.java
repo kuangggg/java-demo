@@ -8,6 +8,8 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
 
 import java.time.Duration;
+import java.time.Instant;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -25,8 +27,6 @@ public class Consumer {
 
         pro.put("group.id", "myGroup");
 
-        // ...
-
         String topic = "test_topic";
 
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(pro);
@@ -35,8 +35,8 @@ public class Consumer {
         consumer.subscribe(topics);
 
         while (true) {
-            ConsumerRecords<String, String> poll = consumer.poll(Duration.ofSeconds(20));
-
+            System.out.println(LocalTime.now());
+            ConsumerRecords<String, String> poll = consumer.poll(Duration.ofSeconds(1));
             for (ConsumerRecord<String, String> consumerRecord : poll) {
                 System.out.println(consumerRecord);
             }
