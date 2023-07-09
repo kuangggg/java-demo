@@ -18,6 +18,10 @@
         <typeAlias type="primary.entity.User" alias="user"/>
     </typeAliases>
 
+    <plugins>
+        <plugin interceptor="primary.interceptor.StatSqlInterceptor"/>
+    </plugins>
+
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
@@ -34,4 +38,6 @@
         <mapper resource="mapper/User.xml"/>
         <package name="mapper"/>
     </mappers>
+
+
 </configuration>

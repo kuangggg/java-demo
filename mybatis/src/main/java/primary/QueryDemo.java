@@ -24,7 +24,7 @@ public class QueryDemo {
 
                 UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
-                User user = mapper.selectOne(1);
+                User user = mapper.selectOne(3);
 
                 User userEx = mapper.selectOneEx(2);
 

@@ -19,7 +19,15 @@
     </insert>
 
     <select id="selectOne" parameterType="java.lang.Integer" resultMap="userMapper">
-        select * from user where id = #{id}
+        select
+        <include refid="all_field"/>
+        from user
+        <where>
+            <if test="id != null">
+                AND id = #{id}
+            </if>
+        </where>
+
     </select>
 
     <select id="selectAll" resultMap="userMapper">
