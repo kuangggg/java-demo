@@ -3,8 +3,8 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="mapper.UserMapper">
-    <resultMap id="userMapper" type="entity.User">
+<mapper namespace="primary.mapper.UserMapper">
+    <resultMap id="userMapper" type="primary.entity.User">
         <id property="id" column="id"/>
         <result property="name" jdbcType="VARCHAR" column="name"/>
         <result property="age" jdbcType="INTEGER" column="age"/>
@@ -14,7 +14,7 @@
         name, age
     </sql>
 
-    <insert id="addOne" parameterType="entity.User" useGeneratedKeys="true" keyProperty="id">
+    <insert id="addOne" parameterType="primary.entity.User" useGeneratedKeys="true" keyProperty="id">
         insert into user( <include refid="all_field" /> ) values (#{name}, #{age})
     </insert>
 

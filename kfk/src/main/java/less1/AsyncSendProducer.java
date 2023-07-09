@@ -18,6 +18,7 @@ public class AsyncSendProducer {
         pro.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
         pro.put(ProducerConfig.CLIENT_ID_CONFIG, "my-client-id");
         pro.put(ProducerConfig.INTERCEPTOR_CLASSES_CONFIG, MyProducerInterceptor.class.getName());
+        pro.put(ProducerConfig.ACKS_CONFIG, "1");
 
         String topic = "test_topic";
 

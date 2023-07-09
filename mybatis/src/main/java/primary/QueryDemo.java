@@ -1,5 +1,7 @@
-import entity.User;
-import mapper.UserMapper;
+package primary;
+
+import primary.entity.User;
+import primary.mapper.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -29,6 +31,7 @@ public class QueryDemo {
                 List<User> users = mapper.selectAll();
 
                 List<User> cccc = mapper.selectByName("cccc");
+
 
             }
         } catch (IOException e) {
