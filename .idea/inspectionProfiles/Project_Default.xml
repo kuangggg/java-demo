@@ -103,6 +103,7 @@
           <option value="mysql:mysql-connector-java" />
           <option value="org.mybatis:mybatis" />
           <option value="com.google.guava:guava" />
+          <option value="org.openjdk.jol:jol-core" />
         </list>
       </option>
     </inspection_tool>
