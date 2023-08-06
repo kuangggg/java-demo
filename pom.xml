@@ -21,5 +21,13 @@
         <module>rx</module>
         <module>kfk</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>20030203.000550</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 </project>
