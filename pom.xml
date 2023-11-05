@@ -20,6 +20,7 @@
         <module>netty</module>
         <module>rx</module>
         <module>kfk</module>
+        <module>design</module>
     </modules>
     <dependencies>
         <dependency>

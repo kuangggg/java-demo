@@ -18,6 +18,7 @@
         <module name="kfk" />
         <module name="rmq" />
         <module name="servelet-demo" />
+        <module name="design" />
         <module name="mybatis-demo" />
         <module name="log-test" />
         <module name="netty" />

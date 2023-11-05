@@ -23,9 +23,17 @@ public class Test {
         private String name;
     }
 
+    class b {
+
+    }
+
 
     public static void main(String[] args) throws IOException {
+        short a = 0b111111111111111;
+        byte age = 0b1111111;
 
+        System.out.println(0b1111111);
+        System.out.println(a);
 //        Integer abc111 = Integer.valueOf("abc111");
 //
 //        System.out.println(abc111);
